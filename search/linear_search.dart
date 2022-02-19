@@ -13,7 +13,8 @@ void linearSearch(List<int> list, int size, int searchedNumber, Stopwatch stopwa
 }
 
 void main() {
-  List<int> arrayOfNumbers = List.generate(100000001, (i) => i);
+  print("Populando o array...\n\n");
+  List<int> arrayOfNumbers = List.generate(999999999, (i) => i);
   Stopwatch stopwatch = Stopwatch();
 
   List<int> searchedNumbers = [
@@ -24,6 +25,7 @@ void main() {
     10000,
     100000,
     100000000,
+    9999999999,
   ];
 
   int sizeOfList = arrayOfNumbers.length;
